@@ -1,0 +1,19 @@
+{
+	"name": "youpzt-optimizer（网站优化工具）",
+	"version": "1.3.3",
+	"description": "优品主题插件更新.",
+	"keywords": ["网站优化", "optimizer", "优品主题"],
+	"homepage": "http://www.youpzt.com/267.html",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "优品主题站长",
+			"email": "zjf2616@163.com",
+			"homepage": "http://www.youpzt.com/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.2.0"
+	}
+}
