@@ -1,15 +1,15 @@
 {
-	"name": "youpzt-optimizer（网站优化工具）",
-	"version": "1.3.3",
+	"name": "wp-optimizer（网站优化工具）",
+	"version": "1.3.4",
 	"description": "优品主题插件更新.",
 	"keywords": ["网站优化", "optimizer", "优品主题"],
-	"homepage": "http://www.youpzt.com/267.html",
+	"homepage": "https://github.com/jiuciyu/wp-optimize",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "优品主题站长",
-			"email": "zjf2616@163.com",
-			"homepage": "http://www.youpzt.com/",
+			"name": "小灰狼",
+			"email": "xyklj@163.com",
+			"homepage": "https://github.com/jiuciyu/wp-optimize",
 			"role": "Developer"
 		}
 	],
