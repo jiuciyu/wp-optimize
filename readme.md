@@ -1,9 +1,9 @@
 
-# WordPress优化工具youpzt-optimizer
-* 作者:ZhaoJunfeng  
+# WordPress优化工具wp-optimizer
+* 作者:ZhaoJunfeng 小灰狼 
 * 官网: http://www.youpzt.com  
 * WordPress最低版本: 3.0.1  
-* WordPress最高版本: 4.3  
+* WordPress最高版本: 4.8  
 * License: GPLv2 or later  
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
