@@ -41,7 +41,7 @@ function ypzt_optimize_showAdminMessages()
 	 $check_obj=check_youpzt_plugins_optimize();
 	 $check_version=$check_obj->version;
 		if($check_version==''){
-			youpzt_optimize_showMessage('<p>网络连接失败，不能检查插件更新！【youpzt-optimize】</p>', false);
+			youpzt_optimize_showMessage('<p>网络连接失败，不能检查插件更新！</p>', false);
 		}elseif($check_version!=WP_YPOPTIMIZE_VERSION){
 			
 			youpzt_optimize_showMessage('<p>网站优化工具插件最新版本'.$check_version.'，请进入<a class="color-red" href="'.$check_obj->homepage.'" target="_blank" title="更新插件"><strong>插件页面</strong></a>更新版本</p>', false);
@@ -69,10 +69,7 @@ if (!function_exists('admin_subscribe')) {
 
 		if (!get_user_meta($user_id, 'youpzt-subscribe')&&'off'!=$subscribe_start&&$current_user->user_level>7) {
 			
-	        echo '<div class="updated subscribe-main"><p>加入邮件订阅列表，获取我们最新内容推送。——<span class="text-ruo">[<a href="http://www.youpzt.com/267.html" target="_blank">youpzt-optimize</a>]</span><i class="fr fb f20 youpzt-close">&#215;</i></p><p>
-			<input type="text" name="email_subscribe" id="email_subscribe" class="youpzt-text" value="'.$current_user->user_email.'" placeholder="填写E-mail地址" /><span class="youpzt-submit-subscribe button-primary" id="subscribe-submit" site-url="'.get_option('home').'">订阅</span> <span id="subscribe_msg" class="f12 color-success"></span>
-			'; 
-	        echo "</p></div>";
+	        echo '<div class="updated subscribe-main"><p>加入邮件订阅列表，获取我们最新内容推送</p></div>';
 			wp_enqueue_style('youpztsubscribe-style',WP_YPOPTIMIZE_PLUGIN_URL.'/css/youpztsubscribe.css', array(), WP_YPOPTIMIZE_VERSION);
 			wp_enqueue_script( 'cookies-jquery',WP_YPOPTIMIZE_PLUGIN_URL.'/js/jquery.cookie.js', array(), WP_YPOPTIMIZE_VERSION);
 			wp_enqueue_script( 'youpztajax-subscribe',WP_YPOPTIMIZE_PLUGIN_URL.'/js/ajax-subscribe.js', array(), WP_YPOPTIMIZE_VERSION);		
@@ -85,7 +82,7 @@ function youpzt_optimize_page(){
 <div class="wrap">
 <h2>网站优化工具<?php echo WP_YPOPTIMIZE_VERSION;?></h2>	
 
-<p class="f13">官方QQ群：519708972  <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=dbf65e2fe706d4a5f798fb98158587c450c30d8df8444fcfe1409c537c828e0b"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="WordPress优品主题" title="WordPress优品主题" style="width:auto;"></a>，进行问题交流与反馈</p>
+<p class="f13">QQ：516264246</p>
 <?php	
 $switch_action=isset($_GET['tab'])? $_GET['tab']:'general';
 //切换
@@ -103,7 +100,7 @@ if($switch_action=='tables'){//数据库优化
 
 ?>
 <hr/>
-<p style="text-align:center;">&copy; <?php echo date("Y"); ?>专业WordPress高端定制平台， <a href="http://www.youpzt.com" target="_blank" rel="nofollow" title="WordPress优品主题建站平台">优品主题</a>(查看更多)</p>
+<p style="text-align:center;">&copy; <?php echo date("Y"); ?>， <a href="https://github.com/jiuciyu/wp-optimize" target="_blank" rel="nofollow" title="WordPress">关注</a>(查看更多)</p>
 
 </div>
 
